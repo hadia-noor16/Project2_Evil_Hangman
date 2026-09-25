@@ -94,7 +94,7 @@ class WordMakerAI():
 
 
 
-        pass # TODO: implement this
+        #pass # TODO: implement this
 
     def reset(self, word_length: int) -> None:
         # This function starts a new game with a word length of `word_length`. This will always be called before guess() or get_valid_word() are called.
@@ -105,7 +105,7 @@ class WordMakerAI():
         if word_length in self.dict:
             self.words_list = self.dict[word_length]
         print(self.words_list)
-        pass # TODO: implement this
+        #pass # TODO: implement this
 
 
     def get_valid_word(self) -> str:
@@ -132,7 +132,7 @@ class WordMakerAI():
         # You can assume that word is lowercase with at least length 1 and guess_letter has exactly length 1 and is a lowercase a-z letter.
 
         # Note: to convert from a list to a tuple, call tuple() on the list. For instance:
-         pass #TODO: add letter positions to
+         #pass #TODO: add letter positions to
          result=[]
          for index in range(len(word)):
              if word[index]==guess_letter:
