@@ -87,11 +87,6 @@ class WordMakerAI():
                         self.dict[word_length]= []
 
                     self.dict[word_length].append(word)  # append word (as values) for that word_length in dict
-        #print(self.dict)
-
-            #if len(words) > 0:
-               # word_length =
-
 
 
         #pass # TODO: implement this
@@ -104,7 +99,7 @@ class WordMakerAI():
 
         if word_length in self.dict:
             self.words_list = self.dict[word_length]
-        print(self.words_list)
+
         #pass # TODO: implement this
 
 
@@ -162,10 +157,8 @@ class WordMakerAI():
             if result not in self.families:
                 self.families[result]=[]
             self.families[result].append(word)
-        print(self.families)
 
         largest_family= max(len(value) for value in self.families.values())   # calculate largest value of families
-        #print(largest_family)
         for key,value in self.families.items():
             if len(value) == largest_family:                            # look for all possible large values
                 eligible_family.append((key,value))                    # append in list(tuple) with key, value
