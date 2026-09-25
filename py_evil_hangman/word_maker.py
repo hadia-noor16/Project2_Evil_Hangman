@@ -107,7 +107,7 @@ class WordMakerAI():
         # Get a valid word in the active dictionary, to return when you lose
         # Can return any word, as long as it satisfies the previous guesses
         return self.words_list[0]
-        pass # TODO: implement this
+        #pass # TODO: implement this
 
     def get_amount_of_valid_words(self) -> int:
         # This function gets the total amount of possible words "remaining" (i.e., that satisfy all the guesses since self.reset was last called)
@@ -118,7 +118,7 @@ class WordMakerAI():
         return len(self.words_list)
 
 
-        pass # TODO: implement this
+        #pass # TODO: implement this
 
     def get_letter_positions_in_word(self, word: str, guess_letter: str) -> tuple[int, ...]:
         # This function should return the positions of guess_letter in word. For instance:
